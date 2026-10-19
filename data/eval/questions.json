@@ -1,0 +1,268 @@
+[
+  {
+    "question": "How many PTO days do I get each year?",
+    "role": "employee",
+    "expected_doc": "pto_policy",
+    "type": "direct",
+    "must_contain": "24"
+  },
+  {
+    "question": "How many unused PTO days can I carry over?",
+    "role": "employee",
+    "expected_doc": "pto_policy",
+    "type": "direct",
+    "must_contain": "5"
+  },
+  {
+    "question": "How far in advance must I request more than 3 days of leave?",
+    "role": "employee",
+    "expected_doc": "pto_policy",
+    "type": "direct",
+    "must_contain": "2 weeks"
+  },
+  {
+    "question": "Do I need a medical certificate for sick leave?",
+    "role": "employee",
+    "expected_doc": "pto_policy",
+    "type": "direct",
+    "must_contain": "3 consecutive"
+  },
+  {
+    "question": "How long is parental leave for the primary caregiver?",
+    "role": "employee",
+    "expected_doc": "parental_leave_policy",
+    "type": "direct",
+    "must_contain": "16"
+  },
+  {
+    "question": "How many days a week do I need to be in the office?",
+    "role": "employee",
+    "expected_doc": "remote_work_policy",
+    "type": "direct",
+    "must_contain": "3"
+  },
+  {
+    "question": "Can I work remotely from another country?",
+    "role": "employee",
+    "expected_doc": "remote_work_policy",
+    "type": "direct",
+    "must_contain": "30 days"
+  },
+  {
+    "question": "What is the home office stipend for new hires?",
+    "role": "employee",
+    "expected_doc": "remote_work_policy",
+    "type": "direct",
+    "must_contain": "500"
+  },
+  {
+    "question": "What is the daily meal allowance when travelling?",
+    "role": "employee",
+    "expected_doc": "expense_policy",
+    "type": "direct",
+    "must_contain": "50"
+  },
+  {
+    "question": "By when must I submit my expense report?",
+    "role": "employee",
+    "expected_doc": "expense_policy",
+    "type": "direct",
+    "must_contain": "30 days"
+  },
+  {
+    "question": "When can I book business class flights?",
+    "role": "employee",
+    "expected_doc": "expense_policy",
+    "type": "direct",
+    "must_contain": "6 hours"
+  },
+  {
+    "question": "What server address should I use for the VPN?",
+    "role": "employee",
+    "expected_doc": "vpn_setup_guide",
+    "type": "direct",
+    "must_contain": "vpn.acme.example"
+  },
+  {
+    "question": "My VPN shows error 812, what should I do?",
+    "role": "employee",
+    "expected_doc": "vpn_setup_guide",
+    "type": "direct",
+    "must_contain": "MFA"
+  },
+  {
+    "question": "How long must my password be?",
+    "role": "employee",
+    "expected_doc": "password_reset_sop",
+    "type": "direct",
+    "must_contain": "14"
+  },
+  {
+    "question": "My account is locked, how do I get it unlocked?",
+    "role": "employee",
+    "expected_doc": "password_reset_sop",
+    "type": "direct",
+    "must_contain": null
+  },
+  {
+    "question": "How long does it take to receive a new laptop?",
+    "role": "employee",
+    "expected_doc": "laptop_request_sop",
+    "type": "direct",
+    "must_contain": "5 business days"
+  },
+  {
+    "question": "How often are company laptops refreshed?",
+    "role": "employee",
+    "expected_doc": "laptop_request_sop",
+    "type": "direct",
+    "must_contain": "3 years"
+  },
+  {
+    "question": "How soon must I report a suspected data breach?",
+    "role": "employee",
+    "expected_doc": "data_privacy_policy",
+    "type": "direct",
+    "must_contain": "24 hours"
+  },
+  {
+    "question": "How long are financial records retained?",
+    "role": "employee",
+    "expected_doc": "data_privacy_policy",
+    "type": "direct",
+    "must_contain": "7 years"
+  },
+  {
+    "question": "How quickly must I report a ransomware incident?",
+    "role": "employee",
+    "expected_doc": "security_incident_sop",
+    "type": "direct",
+    "must_contain": "15 minutes"
+  },
+  {
+    "question": "How many days do I have to finish mandatory training after joining?",
+    "role": "employee",
+    "expected_doc": "onboarding_sop",
+    "type": "direct",
+    "must_contain": "14 days"
+  },
+  {
+    "question": "When do I need three competitive quotes for a purchase?",
+    "role": "employee",
+    "expected_doc": "vendor_approval_sop",
+    "type": "direct",
+    "must_contain": "25,000"
+  },
+  {
+    "question": "How many vacation days am I entitled to per year?",
+    "role": "employee",
+    "expected_doc": "pto_policy",
+    "type": "paraphrase",
+    "must_contain": "24"
+  },
+  {
+    "question": "I forgot my login credentials, how can I get back in?",
+    "role": "employee",
+    "expected_doc": "password_reset_sop",
+    "type": "paraphrase",
+    "must_contain": null
+  },
+  {
+    "question": "My laptop was stolen, what should I do?",
+    "role": "employee",
+    "expected_doc": "laptop_request_sop",
+    "type": "paraphrase",
+    "must_contain": "4 hours"
+  },
+  {
+    "question": "Is it okay to email customer details to my personal Gmail?",
+    "role": "employee",
+    "expected_doc": "data_privacy_policy",
+    "type": "paraphrase",
+    "must_contain": null
+  },
+  {
+    "question": "How long does a formal HR investigation take?",
+    "role": "employee",
+    "expected_doc": null,
+    "type": "access",
+    "must_contain": null
+  },
+  {
+    "question": "How long does a formal HR investigation take?",
+    "role": "hr",
+    "expected_doc": "hr_investigations_sop",
+    "type": "access",
+    "must_contain": "30 days"
+  },
+  {
+    "question": "What is the stock option vesting schedule?",
+    "role": "employee",
+    "expected_doc": null,
+    "type": "unanswerable",
+    "must_contain": null
+  },
+  {
+    "question": "What is on the cafeteria menu today?",
+    "role": "employee",
+    "expected_doc": null,
+    "type": "unanswerable",
+    "must_contain": null
+  },
+  {
+    "question": "Who won the cricket world cup?",
+    "role": "employee",
+    "expected_doc": null,
+    "type": "unanswerable",
+    "must_contain": null
+  },
+  {
+    "question": "How do I get reimbursed for my gym membership?",
+    "role": "employee",
+    "expected_doc": null,
+    "type": "unanswerable",
+    "must_contain": null
+  },
+  {
+    "question": "how many leaves i have?",
+    "role": "employee",
+    "expected_doc": "pto_policy",
+    "type": "informal",
+    "must_contain": "24"
+  },
+  {
+    "question": "wfh allowed?",
+    "role": "employee",
+    "expected_doc": "remote_work_policy",
+    "type": "informal",
+    "must_contain": null
+  },
+  {
+    "question": "can i get a new laptop?",
+    "role": "employee",
+    "expected_doc": "laptop_request_sop",
+    "type": "informal",
+    "must_contain": null
+  },
+  {
+    "question": "my vpn not working",
+    "role": "employee",
+    "expected_doc": "vpn_setup_guide",
+    "type": "informal",
+    "must_contain": null
+  },
+  {
+    "question": "forgot password",
+    "role": "employee",
+    "expected_doc": "password_reset_sop",
+    "type": "informal",
+    "must_contain": null
+  },
+  {
+    "question": "how much can i spend on food during a trip",
+    "role": "employee",
+    "expected_doc": "expense_policy",
+    "type": "informal",
+    "must_contain": "50"
+  }
+]
